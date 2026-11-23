@@ -1,0 +1,50 @@
+{
+ "model": "compressive",
+ "repo": "(new) lucidrains/compressive-transformer-pytorch",
+ "target_repo": "LM_Dec_Long_CompressiveTransformer",
+ "category": "Long",
+ "upstream": "lucidrains/compressive-transformer-pytorch (MIT)",
+ "unified": [
+  "segments of 128, memory 128 and compressed memory 32 (ratio 4) carried across segments"
+ ],
+ "torch": "2.5.1+cu124",
+ "gpu": "NVIDIA GeForce RTX 3070 Ti",
+ "stage": "lm08",
+ "started": "2026-11-17 15:34:44",
+ "smoke": false,
+ "steps": 6000,
+ "capped": false,
+ "bf16": true,
+ "final_bits": 3.3402969200262196,
+ "test": {
+  "512": {
+   "bits_full": 3.312710773840837
+  },
+  "2048": {
+   "bits_full": 3.2897157905115626,
+   "bits_last512": 3.2875806259011005,
+   "gain_from_history": -0.002135164610462148
+  },
+  "8192": {
+   "bits_full": 3.305544557749023,
+   "bits_last512": 3.306579850311554,
+   "gain_from_history": 0.0010352925625314313
+  }
+ },
+ "config": {
+  "train_len": 512,
+  "test_lens": [
+   512,
+   2048,
+   8192
+  ],
+  "batch": 16,
+  "steps": 6000,
+  "eval_every": 1000,
+  "eval_samples": 64,
+  "tail": 256,
+  "max_hours": 1.5
+ },
+ "minutes": 15.6,
+ "seconds": 940.7
+}

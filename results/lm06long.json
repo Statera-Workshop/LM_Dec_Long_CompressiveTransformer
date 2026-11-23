@@ -1,0 +1,427 @@
+{
+ "model": "compressive",
+ "repo": "(new) lucidrains/compressive-transformer-pytorch",
+ "target_repo": "LM_Dec_Long_CompressiveTransformer",
+ "category": "Long",
+ "upstream": "lucidrains/compressive-transformer-pytorch (MIT)",
+ "unified": [
+  "segments of 128, memory 128 and compressed memory 32 (ratio 4) carried across segments"
+ ],
+ "torch": "2.5.1+cu124",
+ "gpu": "NVIDIA GeForce RTX 3070 Ti",
+ "stage": "lm06long",
+ "started": "2026-11-18 04:31:47",
+ "smoke": false,
+ "steps": 30000,
+ "capped": false,
+ "diverged": false,
+ "bf16": true,
+ "final_loss": 3.9880313873291016,
+ "minutes": 127.7,
+ "history": [
+  {
+   "step": 2500,
+   "loss": 4.1990180015563965,
+   "acc": 0.0390625,
+   "acc_updated": 0.03125,
+   "acc_unchanged": 0.046875,
+   "stale_rate": 0.0078125,
+   "by_distance": {
+    "0-256": [
+     0.0,
+     23
+    ],
+    "256-1024": [
+     0.043,
+     233
+    ],
+    "1024-4096": [
+     null,
+     0
+    ],
+    "4096-inf": [
+     null,
+     0
+    ]
+   }
+  },
+  {
+   "step": 5000,
+   "loss": 4.201807022094727,
+   "acc": 0.015625,
+   "acc_updated": 0.03125,
+   "acc_unchanged": 0.0,
+   "stale_rate": 0.015625,
+   "by_distance": {
+    "0-256": [
+     0.087,
+     23
+    ],
+    "256-1024": [
+     0.009,
+     233
+    ],
+    "1024-4096": [
+     null,
+     0
+    ],
+    "4096-inf": [
+     null,
+     0
+    ]
+   }
+  },
+  {
+   "step": 7500,
+   "loss": 4.185860633850098,
+   "acc": 0.01953125,
+   "acc_updated": 0.0234375,
+   "acc_unchanged": 0.015625,
+   "stale_rate": 0.0,
+   "by_distance": {
+    "0-256": [
+     0.043,
+     23
+    ],
+    "256-1024": [
+     0.017,
+     233
+    ],
+    "1024-4096": [
+     null,
+     0
+    ],
+    "4096-inf": [
+     null,
+     0
+    ]
+   }
+  },
+  {
+   "step": 10000,
+   "loss": 4.181131362915039,
+   "acc": 0.015625,
+   "acc_updated": 0.0078125,
+   "acc_unchanged": 0.0234375,
+   "stale_rate": 0.015625,
+   "by_distance": {
+    "0-256": [
+     0.0,
+     23
+    ],
+    "256-1024": [
+     0.017,
+     233
+    ],
+    "1024-4096": [
+     null,
+     0
+    ],
+    "4096-inf": [
+     null,
+     0
+    ]
+   }
+  },
+  {
+   "step": 12500,
+   "loss": 4.174537658691406,
+   "acc": 0.0078125,
+   "acc_updated": 0.0078125,
+   "acc_unchanged": 0.0078125,
+   "stale_rate": 0.015625,
+   "by_distance": {
+    "0-256": [
+     0.0,
+     23
+    ],
+    "256-1024": [
+     0.009,
+     233
+    ],
+    "1024-4096": [
+     null,
+     0
+    ],
+    "4096-inf": [
+     null,
+     0
+    ]
+   }
+  },
+  {
+   "step": 15000,
+   "loss": 4.197318077087402,
+   "acc": 0.0234375,
+   "acc_updated": 0.0234375,
+   "acc_unchanged": 0.0234375,
+   "stale_rate": 0.0234375,
+   "by_distance": {
+    "0-256": [
+     0.0,
+     23
+    ],
+    "256-1024": [
+     0.026,
+     233
+    ],
+    "1024-4096": [
+     null,
+     0
+    ],
+    "4096-inf": [
+     null,
+     0
+    ]
+   }
+  },
+  {
+   "step": 17500,
+   "loss": 4.173372268676758,
+   "acc": 0.0078125,
+   "acc_updated": 0.0,
+   "acc_unchanged": 0.015625,
+   "stale_rate": 0.0078125,
+   "by_distance": {
+    "0-256": [
+     0.0,
+     23
+    ],
+    "256-1024": [
+     0.009,
+     233
+    ],
+    "1024-4096": [
+     null,
+     0
+    ],
+    "4096-inf": [
+     null,
+     0
+    ]
+   }
+  },
+  {
+   "step": 20000,
+   "loss": 4.161123275756836,
+   "acc": 0.01171875,
+   "acc_updated": 0.0078125,
+   "acc_unchanged": 0.015625,
+   "stale_rate": 0.0078125,
+   "by_distance": {
+    "0-256": [
+     0.0,
+     23
+    ],
+    "256-1024": [
+     0.013,
+     233
+    ],
+    "1024-4096": [
+     null,
+     0
+    ],
+    "4096-inf": [
+     null,
+     0
+    ]
+   }
+  },
+  {
+   "step": 22500,
+   "loss": 4.160782337188721,
+   "acc": 0.01953125,
+   "acc_updated": 0.03125,
+   "acc_unchanged": 0.0078125,
+   "stale_rate": 0.0,
+   "by_distance": {
+    "0-256": [
+     0.087,
+     23
+    ],
+    "256-1024": [
+     0.013,
+     233
+    ],
+    "1024-4096": [
+     null,
+     0
+    ],
+    "4096-inf": [
+     null,
+     0
+    ]
+   }
+  },
+  {
+   "step": 25000,
+   "loss": 4.157732963562012,
+   "acc": 0.02734375,
+   "acc_updated": 0.015625,
+   "acc_unchanged": 0.0390625,
+   "stale_rate": 0.0,
+   "by_distance": {
+    "0-256": [
+     0.0,
+     23
+    ],
+    "256-1024": [
+     0.03,
+     233
+    ],
+    "1024-4096": [
+     null,
+     0
+    ],
+    "4096-inf": [
+     null,
+     0
+    ]
+   }
+  },
+  {
+   "step": 27500,
+   "loss": 4.00850248336792,
+   "acc": 0.05078125,
+   "acc_updated": 0.0703125,
+   "acc_unchanged": 0.03125,
+   "stale_rate": 0.0234375,
+   "by_distance": {
+    "0-256": [
+     0.348,
+     23
+    ],
+    "256-1024": [
+     0.021,
+     233
+    ],
+    "1024-4096": [
+     null,
+     0
+    ],
+    "4096-inf": [
+     null,
+     0
+    ]
+   }
+  },
+  {
+   "step": 30000,
+   "loss": 3.9880313873291016,
+   "acc": 0.0390625,
+   "acc_updated": 0.0625,
+   "acc_unchanged": 0.015625,
+   "stale_rate": 0.015625,
+   "by_distance": {
+    "0-256": [
+     0.304,
+     23
+    ],
+    "256-1024": [
+     0.013,
+     233
+    ],
+    "1024-4096": [
+     null,
+     0
+    ],
+    "4096-inf": [
+     null,
+     0
+    ]
+   }
+  }
+ ],
+ "test": {
+  "512": {
+   "acc": 0.04931640625,
+   "acc_updated": 0.0830078125,
+   "acc_unchanged": 0.015625,
+   "stale_rate": 0.0244140625,
+   "by_distance": {
+    "0-256": [
+     0.364,
+     195
+    ],
+    "256-1024": [
+     0.016,
+     1853
+    ],
+    "1024-4096": [
+     null,
+     0
+    ],
+    "4096-inf": [
+     null,
+     0
+    ]
+   }
+  },
+  "2048": {
+   "acc": 0.015625,
+   "acc_updated": 0.0205078125,
+   "acc_unchanged": 0.0107421875,
+   "stale_rate": 0.01171875,
+   "by_distance": {
+    "0-256": [
+     0.0,
+     4
+    ],
+    "256-1024": [
+     0.01,
+     203
+    ],
+    "1024-4096": [
+     0.016,
+     1841
+    ],
+    "4096-inf": [
+     null,
+     0
+    ]
+   }
+  },
+  "8192": {
+   "acc": 0.01318359375,
+   "acc_updated": 0.01171875,
+   "acc_unchanged": 0.0146484375,
+   "stale_rate": 0.01171875,
+   "by_distance": {
+    "0-256": [
+     null,
+     0
+    ],
+    "256-1024": [
+     0.0,
+     7
+    ],
+    "1024-4096": [
+     0.011,
+     190
+    ],
+    "4096-inf": [
+     0.014,
+     1851
+    ]
+   }
+  }
+ },
+ "config": {
+  "pairs": 8,
+  "updates": 4,
+  "queries": 4,
+  "train_len": 512,
+  "test_lens": [
+   512,
+   2048,
+   8192
+  ],
+  "batch": 32,
+  "steps": 30000,
+  "eval_every": 2500,
+  "eval_samples": 512,
+  "max_hours": 5.0
+ },
+ "micro_batch": null,
+ "seconds": 7665.0
+}

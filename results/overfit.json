@@ -1,0 +1,24 @@
+{
+ "model": "compressive",
+ "repo": "(new) lucidrains/compressive-transformer-pytorch",
+ "target_repo": "LM_Dec_Long_CompressiveTransformer",
+ "category": "Long",
+ "upstream": "lucidrains/compressive-transformer-pytorch (MIT)",
+ "unified": [
+  "segments of 128, memory 128 and compressed memory 32 (ratio 4) carried across segments"
+ ],
+ "torch": "2.5.1+cu124",
+ "gpu": "NVIDIA GeForce RTX 3070 Ti",
+ "stage": "overfit",
+ "started": "2026-11-16 13:30:34",
+ "smoke": false,
+ "first_ce": 5.556056022644043,
+ "last_ce": 0.0029437828343361616,
+ "passed": true,
+ "pass_loss": 0.5,
+ "steps": 400,
+ "seconds": 29.3,
+ "lr": 0.001,
+ "note": "overfit uses Adam 1e-3 on 4 x 256 bytes; only an implementation check",
+ "bf16": true
+}

@@ -1,0 +1,83 @@
+{
+ "model": "compressive",
+ "repo": "(new) lucidrains/compressive-transformer-pytorch",
+ "target_repo": "LM_Dec_Long_CompressiveTransformer",
+ "category": "Long",
+ "upstream": "lucidrains/compressive-transformer-pytorch (MIT)",
+ "unified": [
+  "segments of 128, memory 128 and compressed memory 32 (ratio 4) carried across segments"
+ ],
+ "torch": "2.5.1+cu124",
+ "gpu": "NVIDIA GeForce RTX 3070 Ti",
+ "stage": "scaling",
+ "started": "2026-11-16 13:23:33",
+ "smoke": false,
+ "rows": [
+  {
+   "len": 512,
+   "train": {
+    "peak_mb": 331.5,
+    "ms": 121.7,
+    "dtype": "bf16"
+   },
+   "infer": {
+    "peak_mb": 100.0,
+    "ms": 40.5,
+    "dtype": "bf16"
+   }
+  },
+  {
+   "len": 1024,
+   "train": {
+    "peak_mb": 528.8,
+    "ms": 249.4,
+    "dtype": "bf16"
+   },
+   "infer": {
+    "peak_mb": 100.2,
+    "ms": 80.8,
+    "dtype": "bf16"
+   }
+  },
+  {
+   "len": 2048,
+   "train": {
+    "peak_mb": 958.5,
+    "ms": 505.7,
+    "dtype": "bf16"
+   },
+   "infer": {
+    "peak_mb": 100.7,
+    "ms": 160.2,
+    "dtype": "bf16"
+   }
+  },
+  {
+   "len": 4096,
+   "train": {
+    "peak_mb": 1819.1,
+    "ms": 1007.7,
+    "dtype": "bf16"
+   },
+   "infer": {
+    "peak_mb": 101.7,
+    "ms": 321.4,
+    "dtype": "bf16"
+   }
+  },
+  {
+   "len": 8192,
+   "train": {
+    "peak_mb": 3536.6,
+    "ms": 2005.8,
+    "dtype": "bf16"
+   },
+   "infer": {
+    "peak_mb": 103.7,
+    "ms": 644.7,
+    "dtype": "bf16"
+   }
+  }
+ ],
+ "seconds": 19.2
+}
